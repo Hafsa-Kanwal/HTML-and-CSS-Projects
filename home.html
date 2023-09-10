@@ -3,68 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive  Profile Card</title>
-    <link rel="stylesheet" href="Style.css">
-    <!------Box Icon-->
+    <title>Flipping card using HTML and CSS</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
 
 </head>
 <body>
-    <!---------------profile pic------------------->
-    <div class="Profile-card">
-        <div class="image">
-            <img src="imgs/profile-pic.png" alt="Profile-image" class="Profile-image">
-        </div>
-          <!----------Text data----------->
-        <div class="text-data">
-            <span class="name">Hafsa kanwal</span>
-            <span class="job">Frontend Developer</span> 
-        </div>
-        <!----------media buttons--->
-        <div class="media-buttons">
-            <a href="#" class="link" style="background:#4267b2 ;">
-                <i class="fa-brands fa-facebook" ></i>
-            </a>
-            <a href="#" class="link" style="background:#4267b2 ;">
-                <i class="fa-brands fa-twitter"  ></i>
-            </a>
-            <a href="#" class="link" style="background: #4267b2  ;" >
-                <i class="fa-brands fa-linkedin"  ></i>
-            </a>
-            <a href="#" class="link" style="background:#e13063;">
-                <i class="fa-brands fa-instagram"  ></i>
-            </a>
-        </div>
-        <!-----Button--->
-        <div class="buttons">
-            <button class="button">Subscribe</button>
-            <button class="button">Message</button>
-        </div>
-          <!-----analytic data--->
-          <div class="analytic-data">
-            <div class="data">
-                <i class="fa-regular fa-heart">
-                    <span class="number">60k</span>
-                </i>
-              
+    <section>
+       <div class="container">
+        <div class="card front-face">
+         <header>
+            <span class="logo">
+                <img src="imgs/twocircles-removebg-preview.png" alt="">
+                <h5>Master Card</h5>
+            </span>
+            <img src="imgs/sim-credit-debit-card-removebg-preview.png" class="chip">
+
+         </header>
+
+            <div class="card-details">
+                <div class="name-number">
+                    <h6>Card Number</h6>
+                    <h5 class="number">8050 2030 3020 5034</h5>
+                    <h5 class="name">HAfsa kanwal</h5>
+                </div>
+                <div class="valid-date">
+                    <h6>VAlid Thru</h6>
+                    <h5>05/28</h5>
+                </div>
             </div>
-            <div class="data">
-               
-                <i class="fa-regular fa-message"></i>
-                    <span class="number">20k</span>
-                </i>
-                
-            </div>
-            <div class="data">
-                
-                <i class="fa-solid fa-share"></i>
-                    <span class="number">10k</span>
-                </i>
-            </div>
-          </div>
-    </div>
-  
-   
+
+        </div>
+        <div class="card back-face">
+            <h6>For Customer Services call +977 4343 3433 or email at
+                hafsakanwal895@gmail.com
+            </h6>
+            <span class="magnitude-strip"></span>
+            <span class="signature"> <i>005</i> </span>
+            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                exercitationem at autem eius non, fugit inventore sit adipisci beatae quo.</h5>
+        </div>
+       </div>
+
+    </section>
 </body>
 </html>
