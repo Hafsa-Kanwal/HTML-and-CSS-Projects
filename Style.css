@@ -6,6 +6,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 nav{
     position: fixed;
     background-color: #1b1b1b;
@@ -112,103 +114,121 @@ img::before{
     background: none;
 
 
+
 body{
-    display: grid;
-    height: 100%;
-    place-items: center;
-    background: #1abc9c;
-    overflow: hidden;
-
-}
-.container{
-    max-width: 440px;
-    padding: 0 20px;
-    margin: 170px auto;
-
-
-}
-.box{
-    width:100%;
-    background: #fff;
-    border-radius: 5px;
-}
-.box .tittle{
-    line-height: 80px;
-    background: #16a085;
-    text-align: center;
-    border-radius: 5px 5px 0 0;
-    font-size :1.4rem;
-    font-weight: 600;
-    color: #fff;
-}
-.box form{
-    padding: 30px 20px 25px 25px;
-
-}
-.box form .row{
-    height: 45px;
-    background-color: #ff0000;
-    margin-bottom: 15px;
-    position: relative;
-
-}
-.box form .row input{
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
-    outline: none;
-    padding-left: 60px;
-    border-radius: 3px;
-    border: 1px solid lightgray;
-    transition: all 0.3s ease;
-    
-
-}
-.box form .row input:focus{
-    border-color: #16a085;
-    box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
-}
-.box form .row i{
-    position: absolute;
-    width: 47px;
-    height: 100%;
-    background: #16a085;
-    border: 1px solid  #16a085;
+    background: #c8e8e9;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    font-size: 18px;
-    font-size: 16px;
 }
-.box form .button input{
-    padding-left: 0px;
-    font-size: 18px;
-    font-weight: 600px;   background-color: #16a085;
-    color: #fff;
-    border: 1px solid #16a085;
-    cursor: pointer;
+.container{
+    width: 80%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 40px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0,0, 0.2);
 }
-form .button input:hover{
-    background-color: #12876f;
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.box form .pass{
-    margin: 10px 0 20px 0;
+.container .content .left-side{
+    width: 25%;
+    height: 100%;
+    margin-top: 15px;
+    position: relative;
+}
+.content .left-side ::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50% );
+    background: #afafb6
+}
+.content .left-side .details{
+    margin-left:14px;
+    text-align: center;
+}
+.content .left-side .details i{
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+
+}
+.content .left-side .details .topic{
+    font-size:19px ;
+    font-weight: 600;
    
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
 }
 
-.box form .pass a{
-    color: #16a085;
-    font-size: 17px;
-    text-decoration: none;
+.container .content .right-side{
+    width: 75%;
+    margin-left:75px
 }
-.box form .pass a:hover{
-    text-decoration: underline;
+.content .right-side .topic-text{
+    font-size: 25px;
+    font-weight: 600;
+    color: #3e2093;
+ 
 }
-.box form .signup-link{
-    text-align: center;
-    margin: 20px;
-   
+.right-side  .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+
 }
+
+.right-side .input-box input,
+.right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight:600 ;
+    border-radius: 6px;
+    padding:0 15px ;
+    background: #F0F1F8;
+    resize: none;
+
+}
+.right-side  .message-box{
+    min-height: 110px;
+    margin-top:6px ;
+    
+}
+.right-side .button {
+    margin-top: 6px;
+}
+.right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    background: #3e2093;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+
+
+}
+.right-side .button input[type="button"]:hover{
+    background: #5029bc;
+
+    }
+
+
 
 
 .box form .signup-link a{
@@ -227,3 +247,4 @@ form .button input:hover{
 
   
 }
+
